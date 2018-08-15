@@ -37,6 +37,10 @@ li a:hover:not(.active){
     text-align: center;
 }
 
+.resumeheader {
+    color: black;
+}
+
 .floaty{
     padding: 20px 20px;
     display: block;
