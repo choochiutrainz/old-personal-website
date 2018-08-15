@@ -46,3 +46,11 @@ li a:hover:not(.active){
     color: #A7AAAC;
     width: 100%;
 }
+
+.sealvideo{
+    max-width: 100%;
+    height: auto;
+    padding: 40px;
+    align-content: center;
+    background-color: #005DA3;
+}
