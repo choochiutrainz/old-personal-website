@@ -1,8 +1,40 @@
 <html>
   <head>
     <title>choochiutrain</title>
+  <style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color:#005DA3
+    }
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+    }
+
+    li a:hover:not(.active){
+      background-color: #111;
+    }
+
+    .active {
+      background-color: #005DA3
+    }
+  </style>
   </head>
   <body style="font-family:Calibri">
+    <ul>
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="hello.html">Hello</a></li>
+      <li><a href=#>ANOTHER!</a></li>
+    </ul>
     <div class="container ng-scope">
       <div class="col-xs-12 page">
         <div class="page-header">
