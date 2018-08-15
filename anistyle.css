@@ -76,4 +76,5 @@ li a:hover:not(.active){
     padding: 40px;
     align-content: center;
     background-color: #005DA3;
+    width: "400";
 }
