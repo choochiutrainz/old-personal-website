@@ -29,3 +29,12 @@ ul {
   .active {
     background-color: #111;
   }
+
+  .wesstyle {
+    color: #005DA3;
+    text-align: center;
+  }
+
+  .lineacross {
+    color: #A7AAAC;
+    width: 100%;
