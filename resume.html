@@ -1,75 +1,44 @@
 <html>
-        <head>
-          <title>choochiutran</title>
-        <style>
-          ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color:#005DA3
-          }
-          li {
-            float: left;
-          }
-      
-          li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-          }
-      
-          li a:hover:not(.active){
-            background-color: #111;
-          }
-      
-          .active {
-            background-color: #005DA3
-          }
-        </style>
-        </head>
-        <body style="font-family:Calibri">
-          <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="hello.html">Hello</a></li>
-            <li><a href="resume.html">Resume</a></li>
-          </ul>
-          <div class="container ng-scope">
-            <div class="col-xs-12 page">
-              <div class="page-header">
-                <h1><b>RESUME</b></h1>
-                <hr style="color: #A7AAAC;" width="100%">
-              </div>
-              <div class="well">
-                <h2 style="color: #005DA3;"><font size="6"><center>Wesley Chiu</center></font></h2>
-                  <p><center>violinwesley@gmail.com</center></p>
-              </div>
-              <div>
-                <h3>Statement</h3>
-                2017 Computer &amp Network Security graduate of the U.S. Air Force Academy with years of leadership experience in the Air Force and the Air Force Auxiliary. Specializes in web security, UAS exploitation, and network penetration testing, and always looking to expand his knowledge. Excels at C, C++, and Python, and always willing to learn more. Also fluent in Mandarin Chinese as part of the Air Force Language Enabled Airman Program.
-              </div>
-              <div>
-                <h4>Education</h4>
-                <h5>
-                  United States Air Force Academy &#8212 2013 &#8211 2017
-                </h5>
-                <p>
-                  <span class="col-sm-2 col-xs-12">B.S. in Computer and Network Security</span>
-                  <span class="col-sm-2 col-xs-12">Class Rank 143 out of 997</span>
-                  <span class="col-sm-2 col-xs-12">3.50 GPA</span>
-                </p>
-                <p>
-                  <span class="col-sm-2 col-xs-12">Mandarin Chinese Minor</span>
-                  <span class="col-sm-2 col-xs-12">Major Rank 2 out of 10</span>
-                  <span class="col-sm-2 col-xs-12">Singapore Semester Abroad</span>
-                </p>
-                <p>
-                  <i>Courses:</i>
-                  Cryptography, Compilers, Advanced Offensive Cyber Operations, Advanced Defensive Cyber Operations, Computer Networks, Software Reverse Engineering, Statistics, Cyber Policy and Politics, Strategic Information and Cyberspace Operations, Telecommunications Principles, Databases, Operating Systems, Microcontroller Programming, Discrete Mathematics, Digital Design and Computer Architecture, Data Structures and System Programming, Scripting, Cyber Instructor Training, Advanced Chinese, Chinese Civilization and Culture, Chinese Political and Military History, Chinese Literature
-                </p>
-              </div>
-            </div>
-          </div>
-        </body>
-      </html>
+  <head>
+    <title>choochiutran</title>
+    <link rel="stylesheet" href="anistyle.css">
+  </head>
+  <body>
+    <ul>
+      <li><a class="active" href="/index.html">Home</a></li>
+      <li><a href="hello.html">Hello</a></li>
+      <li><a href="photobook.html">Photos</a></li>
+      <li><a class="active" href="resume.html">Resume</a></li>
+    </ul>
+    <div>
+      <div class="page-header">
+        <h1><b>RESUME</b></h1>
+        <hr class="lineacross">
+      </div>
+      <div>
+        <h2 class="subheader">Wesley Chiu</h2>
+        <center>violinwesley@gmail.com</center>
+      </div>
+      <div>
+        <h3 class="resumeheader">Statement</h3>
+        2017 Computer &amp Network Security graduate of the U.S. Air Force Academy with years of leadership experience in the Air Force and the Air Force Auxiliary. Specializes in web security, UAS exploitation, and network penetration testing, and always looking to expand his knowledge. Excels at C, C++, and Python, and always willing to learn more. Also fluent in Mandarin Chinese as part of the Air Force Language Enabled Airman Program.
+      </div>
+      <div>
+        <h3 class="resumeheader">Education</h3>
+        <h3 class="itemheader">United States Air Force Academy &#8212 2013 &#8211 2017</h3>
+        <p class="table">
+          <span class="table_col">B.S. in Computer and Network Security</span>
+          <span class="table_col">Class Rank 143 out of 997</span>
+          <span class="table_col">3.50 GPA</span>
+          <span class="table_col">Mandarin Chinese Minor</span>
+          <span class="table_col">Major Rank 2 out of 10</span>
+          <span class="table_col">Singapore Semester Abroad</span>
+        </p>
+        <p>
+          <i>Courses:</i>
+          Cryptography, Compilers, Advanced Offensive Cyber Operations, Advanced Defensive Cyber Operations, Computer Networks, Software Reverse Engineering, Statistics, Cyber Policy and Politics, Strategic Information and Cyberspace Operations, Telecommunications Principles, Databases, Operating Systems, Microcontroller Programming, Discrete Mathematics, Digital Design and Computer Architecture, Data Structures and System Programming, Scripting, Cyber Instructor Training, Advanced Chinese, Chinese Civilization and Culture, Chinese Political and Military History, Chinese Literature
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
