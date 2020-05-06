@@ -1,14 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from './logo.png';
 import './App.css';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Welcome to choochiutrain.com. The Internet Home for Wesley Chiu.
+          Welcome to choochiutrain.com, the Internet Home of Wesley Chiu.
         </p>
         <a
           className="App-link"
