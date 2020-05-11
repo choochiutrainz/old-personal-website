@@ -2,7 +2,7 @@ import React from 'react'
 import './resume.css'
 
 function downloadResume(){
-    window.location.href = "http://localhost:3000/Wesley_Chiu_Resume.pdf";
+    window.location.href = "https://choochiutrain.com/Wesley_Chiu_Resume.pdf";
 
 }
 
