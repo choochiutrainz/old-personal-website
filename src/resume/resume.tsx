@@ -14,8 +14,6 @@ const Resume = () => {
         </header>
         <div className= "left-pane">
             
-            <h3>Mobile</h3>
-            <p>(949) 923-7510</p>
             <h3>Email</h3>
             <p>violinwesley@gmail.com</p>
 
