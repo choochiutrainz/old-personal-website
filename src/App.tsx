@@ -8,7 +8,6 @@ import Resume from './resume/resume'
 import Projects from './projects/projects'
 
 const App = () => {
-
   return (
     <Router>
       <Navbar/>
