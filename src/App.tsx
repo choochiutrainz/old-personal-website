@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+import Home from './home'
+import Navbar from './navBar'
+import './App.css'
+import Photography from './photography/photography'
+import Resume from './resume/resume'
+import Projects from './projects/projects'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Welcome to choochiutrain.com. The Internet Home for Wesley Chiu.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Router>
+      <Navbar/>
+        <Switch>
+          <Route exact path='/' component={Home} />
+          <Route path='/photography' component={Photography} /> 
+          <Route path='/resume' component={Resume} />      
+          <Route path='/projects' component={Projects} />
+        </Switch>
+      </Router>      
+  )
 }
 
 export default App;
