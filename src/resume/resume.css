@@ -1,48 +1,35 @@
-.Resume {
+.resumeContainer {
+    background-color: #1C2736;
+    color: #DDDDDD;
+    display: grid;
+    grid-template-columns: 1rem auto auto 1rem;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        ". skills experience ."
+        "callToAction callToAction callToAction callToAction";
+    grid-gap: 5rem 3rem;
+    justify-items: start;
     text-align: left;
-    margin: 50px;
 }
 
-.Resume-header {
-    background-color: white;
-    font-size: calc(10px + 2vmin);
-    color: #282c34;
-    padding-top: 1px;
+.skills {
+    grid-area: skills;
 }
 
-.left-pane {
-    width: 17%;
-    height: 100%;
-    float: left;
-    background-color: white;
-    border-collapse: collapse;
-    color: #282c34;
-    padding-left: 40px;
+.sectionTitle {
+    color: #DFB03D;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
 }
 
-.right-pane {
-    width: 80%;
-    height: 100%;
-    float: right;
-    background-color: white;
-    border-collapse: collapse;
-    color: #282c34;
+.sectionSubTitle {
+    margin-top: 2.5rem;
 }
-  
-.Resume-button {
-    background: #6a71bd;
-    border: none;
-    color: white;
-    text-align: center;
-    font-size: 20px;
-    margin-right: 30px;
-    cursor: pointer;
-    outline: gray;
-    box-shadow: gray;
-    border-radius: 15px;
-  }
-  
-  .Resume-button:hover {
-    background: #434779;
-    color: #ffffff;
-  }
+
+.sectionText {
+    color: #B0BCCC;
+}
+
+.experience {
+    grid-area: experience;
+}

@@ -1,0 +1,17 @@
+.portfolioImgFlex {
+    background-color: #1C2736;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.portfolioImage {
+    max-height: 35rem;
+}
+
+.portfolioImage:hover {
+    opacity: 70%;
+    cursor: pointer;
+}

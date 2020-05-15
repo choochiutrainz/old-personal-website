@@ -1,99 +1,189 @@
-.App {
-    text-align: center;
-  }
-  
-  .App-logo {
-    height: 40vmin;
-    pointer-events: none;
-  }
-  
-  @media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-      animation: App-logo-spin infinite 20s linear;
-    }
-  }
-  
-  .App-header {
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-  }
-  
-  .App-link {
-    color: #61dafb;
-  }
-  
-  @keyframes App-logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-
-.button {
-  font-size: 20px;
-  margin-right: 30px;
-  color: #b0bccc;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  outline: none;
+.body {
+  width: 100%;
+  scroll-behavior: smooth;
+  height: 40rem;
+  text-align: center;
+  overflow-x: none;
+  background: #1C2736;
 }
 
-.button:hover {
-  color: white;
-}
-
-.iconbutton {
-  font-size: 20px;
-  margin-right: 30px;
-  color: #b0bccc;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  outline: none;
-}
-
-.iconbutton:hover {
-  background: #6a71bd;
+.container {
+  display: grid;
+  align-items: start;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 5f;
+  grid-template-areas: 
+    "header header"
+    "headerText .";
 }
 
 .navBar {
+  background-size: cover;
+  background-image: url("home-background.png");
+  height: 60rem;
+  overflow-x: none;
+}
+
+.leftGroup{
+  flex-grow: 2.5;
+  padding-left: 10rem;
+}
+
+.centerGroup{
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.rightGroup{
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 10rem;
+}
+
+.introFlex {
+  background-color: #1C2736;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
-  background-color: #1f252d;
 }
 
-.split {
-  width: 50%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  overflow-x: hidden;
+.whiteFlex {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
-.left {
+.grayFlex {
+  background-color: #DDDDDD;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.callToActionFlex {
+  background-color: #B0BCCC;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.footer {
+  background-color: #1C2736;
+  height: 12rem;
+  overflow-x: none;
+  position: relative;
   left: 0;
-  background-color: #1f252d;
+  bottom: 0;
+  width: 100%;
+  color: #DFB03D;
+  text-align: center;
+}
+
+.footerFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 1.5rem 15rem;
+}
+
+.footerButton {
+  font-size: 1rem;
+  color: #DFB03D;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+  margin: .5rem;
+}
+
+.footerButton:hover {
+  color: white;
+}
+
+.header{
+  grid-area: header;
+  max-height: 5rem;
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 5px;
-  padding-left: 35px;
+  justify-content: space-between;
 }
 
-.right {
-  right: 0;
-  background-color: #1f252d;
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  padding: 5px;
-  padding-left: 15px;
+.iconButton {
+  cursor: pointer;
+  margin: 0 .5rem;
+}
+
+.iconButton:hover{
+  opacity: 70%;
+}
+
+.navBarButton {
+  font-size: 20px;
+  color: #282C34;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+  margin: .5rem;
+}
+
+.navBarButton:hover {
+  color: rgb(185, 140, 24);
+}
+
+.headerText{
+  height: 10rem;
+  padding: 13rem;
+  grid-area: headerText;
+}
+
+.centerText {
+  margin: 0rem 30rem;
+}
+
+
+.onLightBg {
+  color: #282C34;
+}
+
+.lgDarkBg {
+  color: #DFB03D;
+  padding: 3rem;
+}
+
+.medDarkBg {
+  color: #DDDDDD;
+  padding: 2rem;
+}
+
+.button {
+  background-color: #6A71BD;
+  width: 180px;
+  height: 40px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+  margin-bottom: 3rem;
+}
+
+.button:hover {
+  background-color: rgb(75, 81, 146);
 }

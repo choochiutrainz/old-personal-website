@@ -2,10 +2,12 @@ import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import Home from './home'
 import Navbar from './navBar'
+import Footer from './footer'
 import './App.css'
-import Photography from './photography/photography'
+import Passions from './passions/passions'
 import Resume from './resume/resume'
-import Projects from './projects/projects'
+import Portfolio from './portfolio/portfolio'
+import Contact from './contact/contact'
 
 const App = () => {
   return (
@@ -13,9 +15,10 @@ const App = () => {
       <Navbar/>
         <Switch>
           <Route exact path='/' component={Home} />
-          <Route path='/photography' component={Photography} /> 
+          <Route path='/passions' component={Passions} /> 
           <Route path='/resume' component={Resume} />      
-          <Route path='/projects' component={Projects} />
+          <Route path='/portfolio' component={Portfolio} />
+          <Route path='/contact' component={Contact} />
         </Switch>
       </Router>      
   )
