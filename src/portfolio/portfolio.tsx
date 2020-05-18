@@ -1,6 +1,7 @@
 import React from 'react'
 import { useHistory } from "react-router-dom"
-import wesAtSANS from '../wes-at-sans.jpg'
+import wesAtSANS from '../assets/photos/wes-at-sans.jpg'
+import Footer from '../footer'
 import './portfolio.css'
 
 const Portfolio = () => {
@@ -26,6 +27,7 @@ const Portfolio = () => {
             <p className="onLightBg">Now that you've seen what I've done and what I can do, please feel free to contact me. I can't wait to hear your story and begin ours!</p>
             <button className="button" onClick={navigateToContact}>CONTACT ME TODAY</button>
         </div>
+        <Footer/>
     </div>
 }
 

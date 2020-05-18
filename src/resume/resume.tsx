@@ -1,5 +1,6 @@
 import React from 'react'
 import { useHistory } from "react-router-dom"
+import Footer from '../footer'
 import './resume.css'
 
 const Resume = () => {
@@ -37,7 +38,6 @@ const Resume = () => {
                 <h3 className="sectionSubTitle">Tools</h3>
                 <p className="sectionText">MS Visual Studio Code</p>
                 <p className="sectionText">Adobe Creative Suite</p>
-                <p className="sectionText">IntelliJ</p>
                 <p className="sectionText">Figma</p>
                 <p className="sectionText">Kali Linux</p>
                 <p className="sectionText">Metasploit</p>
@@ -87,6 +87,7 @@ const Resume = () => {
             <h1 className="onLightBg">Ready to build the next great thing together?</h1>
             <button className="button" onClick={navigateToContact}>CONTACT ME TODAY</button>
         </div>
+        <Footer/>
     </div>
 }
 

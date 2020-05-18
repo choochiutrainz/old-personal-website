@@ -1,6 +1,7 @@
 import React from 'react'
 import { useHistory } from "react-router-dom"
-import wesWithParents from '../wes-with-parents.jpg'
+import Footer from '../footer'
+import wesWithParents from '../assets/photos/wes-with-parents.jpg'
 
 const Passions = () => {
 
@@ -24,6 +25,7 @@ const Passions = () => {
             <p className="onLightBg">Feel free to dive deeper into what I’ve accomplished and what I can bring to you and your team.</p>
             <button className="button" onClick={navigateToResume}>VIEW MY RESUME</button>
         </div>
+        <Footer/>
     </div>
 }
 

@@ -1,41 +1,101 @@
 import React from 'react'
 import { useHistory } from "react-router-dom"
-import chewy from './chewy-logo.png'
-import github from './github-logo.png'
-import linkedin from './linkedin-logo.png'
+import chewy from './assets/logos/chewy-logo.png'
+import github from './assets/logos/github-logo.png'
+import linkedin from './assets/logos/linkedin-logo.png'
+import { render } from '@testing-library/react'
 
 const NavBar = () => {
 
   const history = useHistory();
 
-  function navigateToHome(){ history.push("/") }
+  const navigateToHome = () =>
+    history.push("/") 
 
-  function navigateToPortfolio(){
-    history.push("/portfolio");
+  const navigateToPortfolio = () =>
+    history.push("/portfolio")
+
+  const navigateToPassions = () =>
+    history.push("/passions")
+
+  const navigateToResume = () => 
+    history.push("/resume")
+
+  const navigateToGitHub = () => 
+    window.open("https://github.com/choochiutrainz", "_blank")
+
+  const navigateToLinkedIn = () => 
+    window.open("https://www.linkedin.com/in/choochiutrain", "_blank")
+
+  const navigateToContact = () => 
+    history.push("/contact") 
+
+  const downloadResume = () => {
   }
 
-  function navigateToPassions(){
-    history.push("/passions");
+  const getPageHeader = () => {
+    switch (window.location.pathname) {
+      case "/":
+        return <div>
+          <h1>Leading teams to build working software that people love.</h1>
+          <p>Welcome to choochiutrain.com, the Internet home for Wesley Chiu.</p>
+          <button className="button" onClick={navigateToContact}>HIRE ME TODAY</button>
+        </div>
+        break
+
+      case "/portfolio":
+        return <div><h1>See what you can expect from me.</h1></div>
+        break
+
+      case "/passions":
+        return <div><h1>{'Check out my Passions & Hobbies.'}</h1></div>
+        break
+      
+      case "/resume":
+        return <div>
+          <h1>Learn more about My Story.</h1>
+          <button className="button" onClick={downloadResume}>DOWNLOAD RESUME</button>
+          </div>
+        break
+
+      case "/contact":
+        return <div><h1>Let's connect today!</h1></div>
+        break
+
+      default:
+        break
+    }
   }
 
-  function navigateToResume(){
-    history.push("/resume");
-  }
+  const getHeaderBackground = () => {
+    switch (window.location.pathname) {
+      case "/":
+        return 'homeBackground'
+        break
 
-  function navigateToGitHub(){
-    window.open("https://github.com/choochiutrainz", "_blank");
-  }
+      case "/portfolio":
+        return 'portfolioBackground'
+        break
 
-  function navigateToLinkedIn(){
-    window.open("https://www.linkedin.com/in/choochiutrain", "_blank");
-  }
+      case "/passions":
+        return 'passionsBackground'
+        break
 
-  function navigateToContact(){
-    history.push("/contact");
+      case "/resume":
+        return 'resumeBackground'
+        break
+
+      case "/contact":
+        return 'contactBackground'
+        break
+
+      default:
+        break
+    }
   }
 
   return (
-    <div className="navBar container">
+    <div className={`navBar headerContainer ${getHeaderBackground()}`}>
       <div className="header">
         <div className='leftGroup'>
           <img className='iconButton' onClick={navigateToHome} src={chewy} alt="Home" />
@@ -51,12 +111,8 @@ const NavBar = () => {
           <img className="iconButton" onClick={navigateToLinkedIn} src={linkedin} alt="LinkedIn" />
         </div>
       </div>
-      <div className="headerText">
-        <h1>Leading teams to build working software that people love.</h1>
-        <p>Welcome to choochiutrain.com, the Internet home for Wesley Chiu.</p>
-        <button className="button" onClick={navigateToContact}>HIRE ME TODAY</button>
-      </div>
-    </div>
+      <div className="headerText">{getPageHeader()}</div>
+  </div>
   )
 }
 

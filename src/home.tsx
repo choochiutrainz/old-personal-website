@@ -1,8 +1,9 @@
 import React from 'react'
 import { useHistory } from "react-router-dom"
 import './home.css'
-import wesInSpace from './wes-in-space.jpg'
-import wesAtSANS from './wes-at-sans.jpg'
+import Footer from './footer'
+import wesInSpace from './assets/photos/wes-in-space.jpg'
+import wesAtSANS from './assets/photos/wes-at-sans.jpg'
 
 const Home = () => {
 
@@ -25,7 +26,7 @@ const Home = () => {
             <img className="lgImg" src={wesInSpace} alt="Wes in Space" />
             <div className="rightContainer">
                 <h1 className="lgDarkBg">My passion and focus is agile software development.</h1>
-                <p className="medDarkBg">I strive to build and lead effective, diverse, and collaborative product teams to design & deliver a product with our users that we couldn’t have imagined alone. If you want to learn more about working together, feel free to contact me</p>
+                <p className="medDarkBg">{'I strive to build and lead effective, diverse, and collaborative product teams to design & deliver a product with our users that we couldn’t have imagined alone. If you want to learn more about working together, feel free to contact me'}</p>
             </div>
         </div>
         <div className="grayFlex">
@@ -57,6 +58,7 @@ const Home = () => {
             <h1 className="onLightBg">Ready to build the next great thing together?</h1>
             <button className="button" onClick={navigateToContact}>CONTACT ME TODAY</button>
         </div>
+        <Footer/>
     </div>
 }
 
