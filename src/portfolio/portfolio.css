@@ -5,10 +5,12 @@
     align-items: center;
     width: 100%;
     justify-content: space-evenly;
+    padding-bottom: 5rem;
 }
 
 .portfolioImage {
     max-height: 35rem;
+    padding: 1rem 2rem;
 }
 
 .portfolioImage:hover {

@@ -3,11 +3,10 @@ import { useHistory } from "react-router-dom"
 import chewy from './assets/logos/chewy-logo.png'
 import github from './assets/logos/github-logo.png'
 import linkedin from './assets/logos/linkedin-logo.png'
-import { render } from '@testing-library/react'
 
 const NavBar = () => {
 
-  const history = useHistory();
+  const history = useHistory()
 
   const navigateToHome = () =>
     history.push("/") 
@@ -30,37 +29,33 @@ const NavBar = () => {
   const navigateToContact = () => 
     history.push("/contact") 
 
-  const downloadResume = () => {
-  }
+  const downloadResume = () => 
+    console.log("Hello, PDF!")
+
 
   const getPageHeader = () => {
     switch (window.location.pathname) {
       case "/":
         return <div>
           <h1>Leading teams to build working software that people love.</h1>
-          <p>Welcome to choochiutrain.com, the Internet home for Wesley Chiu.</p>
+          <h4>Welcome to choochiutrain.com, the Internet home for Wesley Chiu.</h4>
           <button className="button" onClick={navigateToContact}>HIRE ME TODAY</button>
         </div>
-        break
 
       case "/portfolio":
-        return <div><h1>See what you can expect from me.</h1></div>
-        break
+        return <div className="onLightBg"><h1>See what you can expect from me.</h1></div>
 
       case "/passions":
-        return <div><h1>{'Check out my Passions & Hobbies.'}</h1></div>
-        break
+        return <div className="onLightBg"><h1>{'Check out my Passions & Hobbies.'}</h1></div>
       
       case "/resume":
         return <div>
           <h1>Learn more about My Story.</h1>
           <button className="button" onClick={downloadResume}>DOWNLOAD RESUME</button>
           </div>
-        break
 
       case "/contact":
         return <div><h1>Let's connect today!</h1></div>
-        break
 
       default:
         break
@@ -71,23 +66,18 @@ const NavBar = () => {
     switch (window.location.pathname) {
       case "/":
         return 'homeBackground'
-        break
 
       case "/portfolio":
         return 'portfolioBackground'
-        break
 
       case "/passions":
         return 'passionsBackground'
-        break
 
       case "/resume":
         return 'resumeBackground'
-        break
 
       case "/contact":
         return 'contactBackground'
-        break
 
       default:
         break

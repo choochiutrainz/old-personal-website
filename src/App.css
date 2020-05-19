@@ -1,10 +1,12 @@
 @font-face {
-  font-family: 'proximanova';
-  src: url('https://use.typekit.net/oun5yog.css');
-}
+  font-family:"proxima-nova";
+  src:url("https://use.typekit.net/af/cebe0e/00000000000000003b9b3060/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff2"),url("https://use.typekit.net/af/cebe0e/00000000000000003b9b3060/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff"),url("https://use.typekit.net/af/cebe0e/00000000000000003b9b3060/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("opentype");
+  font-display:auto;font-style:normal;font-weight:300;
+  }
 
 .body {
   width: 100%;
+  font-family: 'proxima-nova';
   scroll-behavior: smooth;
   height: 40rem;
   text-align: center;
@@ -15,31 +17,48 @@
 .headerContainer {
   display: grid;
   align-items: start;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 3fr;
+  grid-template-columns: 1fr 1.2fr;
+  grid-template-rows: 1fr 2fr;
   grid-template-areas: 
     "header header"
     "headerText .";
+}
+
+.header{
+  grid-area: header;
+  max-height: 5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerText{
+  height: 10rem;
+  padding: 0rem 12rem;
+  grid-area: headerText;
+  color: white;
 }
 
 .navBar {
   background-size: cover;
   height: 60rem;
   overflow-x: none;
+  font-family: 'proxima-nova';
 }
 
 .homeBackground {
-  background-image: url("./assets/photos/home-background.png");
+  background-image: url("./assets/photos/home-background.JPG");
 }
 
 .portfolioBackground {
-  background-image: url("./assets/photos/portfolio-background.jpg");
+  background-image: url("./assets/photos/wes-in-atlanta.jpg");
   background-position: center;
 }
 
 .passionsBackground {
   background-image: url("./assets/photos/passions-background.jpg");
-  background-position: center;
 }
 
 .resumeBackground {
@@ -132,16 +151,6 @@
   color: white;
 }
 
-.header{
-  grid-area: header;
-  max-height: 5rem;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .iconButton {
   cursor: pointer;
   margin: 0 .5rem;
@@ -166,16 +175,9 @@
   color: rgb(185, 140, 24);
 }
 
-.headerText{
-  height: 10rem;
-  padding: 13rem;
-  grid-area: headerText;
-}
-
 .centerText {
   margin: 0rem 30rem;
 }
-
 
 .onLightBg {
   color: #282C34;
@@ -183,7 +185,7 @@
 
 .lgDarkBg {
   color: #DFB03D;
-  padding: 3rem;
+  padding: 2rem;
 }
 
 .medDarkBg {
@@ -193,6 +195,7 @@
 
 .button {
   background-color: #6A71BD;
+  font-family: 'proxima-nova';
   width: 180px;
   height: 40px;
   color: white;

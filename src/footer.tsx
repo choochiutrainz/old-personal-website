@@ -3,27 +3,22 @@ import { useHistory } from "react-router-dom"
 
 const Footer = () => {
 
-  const history = useHistory();
+  const history = useHistory()
 
-  function navigateToHome(){
-    history.push("/");
-  }
+  const navigateToHome = () =>
+    history.push("/") 
 
-  function navigateToPortfolio(){
-    history.push("/portfolio");
-  }
+  const navigateToPortfolio = () =>
+    history.push("/portfolio")
 
-  function navigateToPassions(){
-    history.push("/passions");
-  }
+  const navigateToPassions = () =>
+    history.push("/passions")
 
-  function navigateToResume(){
-    history.push("/resume");
-  }
+  const navigateToResume = () => 
+    history.push("/resume")
 
-  function navigateToContact(){
-    history.push("/contact");
-  }
+  const navigateToContact = () => 
+    history.push("/contact") 
 
   return (
     <div className="footer">

@@ -1,9 +1,8 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
-import Home from './home'
-import Navbar from './navBar'
-import Footer from './footer'
 import './App.css'
+import Navbar from './navBar'
+import Home from './home/home'
 import Passions from './passions/passions'
 import Resume from './resume/resume'
 import Portfolio from './portfolio/portfolio'

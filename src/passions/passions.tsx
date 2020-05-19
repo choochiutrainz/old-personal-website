@@ -5,17 +5,16 @@ import wesWithParents from '../assets/photos/wes-with-parents.jpg'
 
 const Passions = () => {
 
-    const history = useHistory();
+    const history = useHistory()
     
-    function navigateToResume(){
-        history.push("/resume");
-    }
+    const navigateToResume = () =>
+        history.push("/resume")
 
     return <div className="body">
         <div className="introFlex">
             <h1 className="lgDarkBg">A few fun facts about myself</h1>
             <img className="lgImg" src={wesWithParents} alt="Wes with parents" />
-            <p className="centerText medDarkBg">I’m a U.S. Air Force Cyberwarfare Officer at Langley AFB near Hampton, VA. I love exploring the world on my bicycle, rockclimbing, and capturing special moments on camera. I have two cats named Byakko and Tofu, I like a good IPA, my favorite food is Taiwanese beef noodle soup, and I had to get stitches on my head...once, thankfully.</p>
+            <p className="centerText medDarkBg">I’m a U.S. Air Force Cyberwarfare Officer at Langley AFB near Hampton, VA. I love bikepacking, rockclimbing, and capturing special moments on camera. I have two cats named Byakko and Tofu, I like a good IPA, my favorite food is Taiwanese beef noodle soup, and I had to get stitches on my head...once, thankfully.</p>
         </div>
         <div className="whiteFlex">
             <h1 className="onLightBg">Here are some special memories that I had so much fun capturing</h1>
