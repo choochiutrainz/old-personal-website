@@ -4,34 +4,18 @@ import chewy from './assets/logos/chewy-logo.png'
 import github from './assets/logos/github-logo.png'
 import linkedin from './assets/logos/linkedin-logo.png'
 
+
 const NavBar = () => {
 
   const history = useHistory()
-
-  const navigateToHome = () =>
-    history.push("/") 
-
-  const navigateToPortfolio = () =>
-    history.push("/portfolio")
-
-  const navigateToPassions = () =>
-    history.push("/passions")
-
-  const navigateToResume = () => 
-    history.push("/resume")
-
-  const navigateToGitHub = () => 
-    window.open("https://github.com/choochiutrainz", "_blank")
-
-  const navigateToLinkedIn = () => 
-    window.open("https://www.linkedin.com/in/choochiutrain", "_blank")
-
-  const navigateToContact = () => 
-    history.push("/contact") 
-
-  const downloadResume = () => 
-    console.log("Hello, PDF!")
-
+  const navigateToHome = () => history.push("/") 
+  const navigateToPortfolio = () => history.push("/portfolio")
+  const navigateToPassions = () => history.push("/passions")
+  const navigateToResume = () => history.push("/resume")
+  const navigateToGitHub = () => window.open("https://github.com/choochiutrainz", "_blank")
+  const navigateToLinkedIn = () => window.open("https://www.linkedin.com/in/choochiutrain", "_blank")
+  const navigateToContact = () => history.push("/contact") 
+  const downloadResume = () => window.open("https://drive.google.com/file/d/15nBlevzEoOrFK-5z5diM_UopkqjlSCD_/view?usp=sharing", "_blank")
 
   const getPageHeader = () => {
     switch (window.location.pathname) {
@@ -57,6 +41,13 @@ const NavBar = () => {
       case "/contact":
         return <div><h1>Let's connect today!</h1></div>
 
+      case "/error":
+        return <div>
+          <h1 className="onLightBg">Oops! I can't seem to find the page you're looking for.</h1>
+          <h4 className="onLightBg">May I make it up to you and take you back to the home page?</h4>
+          <button className="button" onClick={navigateToHome}>TAKE ME HOME!</button>
+          </div>
+
       default:
         break
     }
@@ -78,6 +69,9 @@ const NavBar = () => {
 
       case "/contact":
         return 'contactBackground'
+
+      case "/error":
+        return 'errorBackground'
 
       default:
         break

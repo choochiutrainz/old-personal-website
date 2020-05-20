@@ -18,10 +18,13 @@ const Portfolio = () => {
         history.push("/section-31")
 
     const navigateToDARPA = () =>
-        history.push("/darpa-swarm-challenge")
+        history.push("/darpa")
 
     const navigateToRS = () =>
         history.push("/rogue-squadron")
+
+    const navigateToUAS = () =>
+        history.push("/uas-medical-resupply")
 
     return <div className="body">
         <div className="introFlex">

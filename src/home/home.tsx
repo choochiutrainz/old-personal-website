@@ -6,29 +6,18 @@ import wesInSpace from '../assets/photos/wes-in-space.jpg'
 import wesAtSANS from '../assets/photos/wes-at-sans.jpg'
 import wesHoldingUAS from '../assets/photos/wes-holding-uas.jpg'
 import wesWithStarfox from '../assets/photos/wes-with-starfox-2.jpg'
+import wesWithCamera from '../assets/photos/wes-photographer.jpg'
 
 
 const Home = () => {
 
     const history = useHistory()
-    
-    const navigateToPassions = () =>
-        history.push("/passions")
-    
-    const navigateToPortfolio = () =>
-        history.push("/portfolio")
-    
-    const navigateToContact = () => 
-        history.push("/contact")
-
-    const navigateToS31 = () =>
-        history.push("/section-31")
-
-    const navigateToDARPA = () =>
-        history.push("/darpa-swarm-challenge")
-
-    const navigateToRS = () =>
-        history.push("/rogue-squadron")
+    const navigateToPassions = () => history.push("/passions")
+    const navigateToPortfolio = () => history.push("/portfolio")
+    const navigateToContact = () => history.push("/contact")
+    const navigateToS31 = () => history.push("/section-31")
+    const navigateToDARPA = () => history.push("/darpa")
+    const navigateToRS = () => history.push("/rogue-squadron")
 
     return <div className="body">
         <div className="homeIntroGrid">
@@ -44,7 +33,7 @@ const Home = () => {
                     <p className="onLightBg">I am a US Air Force Cyberwarfare Officer by trade. I get a good kick out of pen-testing my home devices and participating in Capture-the-Flag (CTF) events to test my skills.</p>
                 </div>
                 <div className="rightContainer2">
-                    <img className="medImg" src={wesInSpace} alt="Wes at SANS" />
+                    <img className="medImg" src={wesWithCamera} alt="Wes with his Sony a7iii" />
                     <p className="onLightkBg">I love capturing priceless moments on my camera and sharing the stories of amazing people that I meet around the world. I’d be honored to photograph your special occasion.</p>
                 </div>
             </div>

@@ -4,6 +4,7 @@ import Footer from '../footer'
 const Section31 = () => {
     return <div className="body">
         <div>hello there</div>
+        <Footer/>
     </div>
 }
 
