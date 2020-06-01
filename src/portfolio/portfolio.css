@@ -1,11 +1,10 @@
 .portfolioImgFlex {
-    background-color: #1C2736;
     display: flex;
     flex-direction: row;
     align-items: center;
     width: 100%;
     justify-content: space-evenly;
-    padding-bottom: 5rem;
+    padding-bottom: 2rem;
 }
 
 .portfolioImage {
@@ -17,3 +16,94 @@
     opacity: 70%;
     cursor: pointer;
 }
+
+.overviewContainer {
+    background-color: #1C2736;
+    color: #DDDDDD;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1.5fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+      ". . ."
+      ". header ."
+      ". subHeader ."
+      ". img ."
+      ". overviewText .";
+    grid-gap: 1rem;
+    justify-items: center;
+    text-align: center;
+  }
+  
+  .overviewHeader { 
+    grid-area: header;
+    color: #DFB03D;
+  }
+  
+  .overviewSubHeader { grid-area: subHeader }
+
+  .projectImage { 
+      grid-area: img;
+      max-height: 40rem;
+    }
+
+  .projectText { grid-area: overviewText }
+
+
+.detailsContainer {
+    background-color: #DDDDDD;
+    color: #282C34;
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 3fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        ". . . . ."
+        ". detailsText detailsText detailsText ."
+        ". detailsImg detailsImg1 detailsImg2 ."
+        ". endNotes endNotes endNotes ."
+        ". . . . .";
+    grid-gap: 0.5rem;
+    text-align: center;
+}
+
+.detailsText {
+    grid-area: detailsText;
+    justify-self: center;
+}
+
+
+.detailsImg {
+  grid-area: detailsImg;
+  justify-self: center;
+  max-height: 25rem;
+  padding: 1rem;
+}
+
+.detailsImg1 {
+  grid-area: detailsImg1;
+  justify-self: center;
+  max-height: 25rem;
+  padding: 1rem;
+}
+
+.detailsImg2 {
+  grid-area: detailsImg2;
+  justify-self: center;
+  max-height: 25rem;
+  padding: 1rem;
+}
+
+
+.endNotes { grid-area: endNotes }
+
+.orgContainer {
+    color: #282C34;
+    text-align: left;
+    margin: 2rem 15rem;
+}
+
+.orgLogo {
+    height: 10rem;
+    vertical-align: middle;
+    margin: 0rem 4rem;
+    float: left;
+  }

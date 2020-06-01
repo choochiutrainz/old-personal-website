@@ -1,0 +1,34 @@
+.photosContainer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem 10rem;
+}
+
+.photosColumn {
+    flex: 33%;
+    max-width: 33%;
+}
+
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+}
+
+.passionsHeader {
+    grid-column-start: first;
+    grid-column-end: last;
+    color: #282C34;
+}
+
+.horizontalPhoto { max-height: 20rem }
+
+.verticalPhoto { max-width: 30rem }

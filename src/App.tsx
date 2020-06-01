@@ -11,8 +11,10 @@ import Portfolio from './portfolio/portfolio'
 import Contact from './contact/contact'
 import DARPA from './portfolio/darpa'
 import Section31 from './portfolio/section-31'
-import UASMedical from './portfolio/uas-medical-resupply'
+import DIUx from './portfolio/diux'
 import RogueSquadron from './portfolio/rogue-squadron'
+import Streetcode from './portfolio/streetcode-academy'
+import Cats from './easter-eggs/cats'
 
 const App = () => {
   return (
@@ -27,8 +29,10 @@ const App = () => {
           <Route path='/darpa' component={DARPA} />
           <Route path='/section-31' component={Section31} />
           <Route path='/rogue-squadron' component={RogueSquadron} />
-          <Route path='/uas-medical-resupply' component={UASMedical} />
+          <Route path='/diux' component={DIUx} />
+          <Route path='/streetcode-academy' component={Streetcode} />
           <Route path='/error' component={Error} />
+          <Route path='/cats' component={Cats} />
           <Route path='*' render={() => <Redirect to={{pathname: "/error"}} />} />
         </Switch>
       </Router>      

@@ -6,12 +6,16 @@
 
 .body {
   width: 100%;
-  font-family: 'proxima-nova';
+  font-family: 'proxima-nova', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   scroll-behavior: smooth;
   height: 40rem;
   text-align: center;
   overflow-x: none;
   background: #1C2736;
+}
+
+.underlinedText {
+  text-decoration: underline;
 }
 
 .headerContainer {
@@ -48,18 +52,14 @@
   font-family: 'proxima-nova';
 }
 
-.homeBackground {
-  background-image: url("./assets/photos/home-background.JPG");
-}
+.homeBackground { background-image: url("./assets/photos/home-background.JPG") }
 
 .portfolioBackground {
   background-image: url("./assets/photos/wes-in-atlanta.jpg");
   background-position: center;
 }
 
-.passionsBackground {
-  background-image: url("./assets/photos/passions-background.jpg");
-}
+.passionsBackground { background-image: url("./assets/photos/passions-background.jpg") }
 
 .resumeBackground {
   background-image: url("./assets/photos/resume-background.jpg");
@@ -74,6 +74,34 @@
 .errorBackground {
   background-image: url("./assets/photos/error-background.png");
   background-position: center;
+}
+
+.catsBackground {
+  background-image: url("./assets/photos/cats.jpeg");
+  background-position: center;
+}
+
+.section31Background {
+  background-image: url("./assets/photos/wes-with-starfox.jpg");
+  background-position: top;
+}
+
+.rogueSquadronBackground {
+
+}
+
+.DIUBackground {
+  
+}
+
+.streetcodeBackground { background-image: url("./assets/photos/streetcode-background.png") }
+
+.darpaBackground { background-image: url("./assets/photos/darpa-drone.jpg")}
+
+.iconImg {
+  height: 3rem;
+  vertical-align: middle;
+  margin-right: 1rem;
 }
 
 .leftGroup{
@@ -152,18 +180,14 @@
   margin: .5rem 5rem;
 }
 
-.footerButton:hover {
-  color: white;
-}
+.footerButton:hover { color: white }
 
 .iconButton {
   cursor: pointer;
   margin: 0 .5rem;
 }
 
-.iconButton:hover{
-  opacity: 70%;
-}
+.iconButton:hover { opacity: 70% }
 
 .navBarButton {
   font-size: 20px;
@@ -180,23 +204,41 @@
   color: rgb(185, 140, 24);  
 }
 
-.centerText {
-  margin: 0rem 30rem;
-}
+.centerText { margin: 0rem 30rem }
 
-.onLightBg {
-  color: #282C34;
-}
+.onLightBg { color: #282C34 }
 
 .lgDarkBg {
   color: #DFB03D;
   padding: 2rem;
 }
 
+.grayHighlight {
+  background-color: rgb(190, 190, 190);
+  color: #282C34;
+  opacity: 90%;
+}
+
+.tanHighlight {
+  background-color: rgb(148, 133, 113);
+  color: #282C34;
+  opacity: 90%;
+}
+
+.whiteText { color: #DDDDDD }
+
 .medDarkBg {
   color: #DDDDDD;
   padding: 2rem;
 }
+
+.playButton {
+  cursor: pointer;
+  vertical-align: middle;
+  margin-right: .5rem;
+}
+
+.playButton:hover { opacity: 70% }
 
 .button {
   background-color: #6A71BD;
@@ -212,6 +254,23 @@
   font-weight: bold;
 }
 
-.button:hover {
-  background-color: rgb(75, 81, 146);
+.button:hover { background-color: rgb(75, 81, 146) }
+
+.lightTextLink {
+  color: #DFB03D;
+  text-decoration: none;
+}
+
+.lightTextLink:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.darkTextLink { color: rgb(84, 91, 160) }
+
+.darkTextLink:hover { color: rgb(185, 140, 24) }
+
+.hiddenTextLink {
+  text-decoration: none;
+  color: #DDDDDD;
 }

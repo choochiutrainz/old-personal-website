@@ -2,23 +2,39 @@ import React from 'react'
 import { useHistory } from "react-router-dom"
 
 const Footer = () => {
-
   const history = useHistory()
+  const navigateToHome = () => history.push("/") 
+  const navigateToPortfolio = () => history.push("/portfolio")
+  const navigateToPassions = () => history.push("/passions")
+  const navigateToResume = () => history.push("/resume")
+  const navigateToContact = () => history.push("/contact") 
 
-  const navigateToHome = () =>
-    history.push("/") 
 
-  const navigateToPortfolio = () =>
-    history.push("/portfolio")
-
-  const navigateToPassions = () =>
-    history.push("/passions")
-
-  const navigateToResume = () => 
-    history.push("/resume")
-
-  const navigateToContact = () => 
-    history.push("/contact") 
+  const getPageFooter = () => {
+    switch (window.location.pathname) {
+      case "/":
+        return <div>
+        </div>
+  
+      case "/portfolio":
+        return <div></div>
+  
+      case "/passions":
+        return <div></div>
+  
+      case "/resume":
+        return <div></div>
+  
+      case "/contact":
+        return <div></div>
+  
+      case "/error":
+        return <div></div>
+  
+      default:
+        break
+    }
+  }
 
   return (
     <div className="footer">

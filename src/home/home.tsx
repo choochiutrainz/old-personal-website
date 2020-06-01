@@ -2,28 +2,27 @@ import React from 'react'
 import { useHistory } from "react-router-dom"
 import './home.css'
 import Footer from '../footer'
-import wesInSpace from '../assets/photos/wes-in-space.jpg'
 import wesAtSANS from '../assets/photos/wes-at-sans.jpg'
-import wesHoldingUAS from '../assets/photos/wes-holding-uas.jpg'
 import wesWithStarfox from '../assets/photos/wes-with-starfox-2.jpg'
 import wesWithCamera from '../assets/photos/wes-photographer.jpg'
+import wesWithZipline from '../assets/photos/zipline-team-1.png'
+import wesPortrait from '../assets/photos/wes-portrait.png'
 
 
 const Home = () => {
-
     const history = useHistory()
     const navigateToPassions = () => history.push("/passions")
     const navigateToPortfolio = () => history.push("/portfolio")
     const navigateToContact = () => history.push("/contact")
     const navigateToS31 = () => history.push("/section-31")
-    const navigateToDARPA = () => history.push("/darpa")
+    const navigateToDIUx = () => history.push("/diux")
     const navigateToRS = () => history.push("/rogue-squadron")
 
     return <div className="body">
         <div className="homeIntroGrid">
-            <img className="homeIntroImage" src={wesInSpace} alt="Wes in Space" />
+            <img className="homeIntroImage" src={wesPortrait} alt="Wesley's Portrait" />
             <h1 className="homeIntroHeader">{'My passion & focus is agile software development.'}</h1>
-            <p className="homeIntroText">{'I strive to build & lead effective, diverse, and collaborative product teams to design & deliver a product with our users that we couldn’t have imagined alone. If you want to learn more about working together, feel free to contact me'}</p>
+            <p className="homeIntroText">{'I strive to build & lead effective, diverse, and collaborative product teams to design & deliver a product with our users that we couldn’t have imagined alone. If you want to learn more about working together, feel free to'} <a className="lightTextLink" href="/contact">contact me.</a></p>
         </div>
         <div className="grayFlex">
             <h1 className="onLightBg">I also do portrait photography. And I like to hack things.</h1>
@@ -43,9 +42,9 @@ const Home = () => {
             <h1 className="onLightBg">My projects</h1>
             <p className="onLightBg">It's a wonderful opportunity to work with people who are so passionate about their craft and to enable them to achieve new heights. Take a look at my latest projects that I've been a part of.</p>
             <div className="centerContainer3">
-                <img className="portfolioImage" src={wesWithStarfox} alt="Wes with Starfox" onClick={navigateToS31}/>
-                <img className="portfolioImage" src={wesAtSANS} alt="Wes at SANS" onClick={navigateToRS}/>
-                <img className="portfolioImage" src={wesHoldingUAS} alt="Wes holding a UAS" onClick={navigateToDARPA}/>
+                <img className="portfolioImage" src={wesWithStarfox} alt="Section 31" onClick={navigateToS31}/>
+                <img className="portfolioImage" src={wesAtSANS} alt="Rogue Squadron" onClick={navigateToRS}/>
+                <img className="portfolioImage" src={wesWithZipline} alt="DIU" onClick={navigateToDIUx}/>
             </div>
             <button className="button" onClick={navigateToPortfolio}>SEE MORE PROJECTS</button>
         </div>

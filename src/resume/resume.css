@@ -12,9 +12,9 @@
     text-align: left;
 }
 
-.skills {
-    grid-area: skills;
-}
+.skills { grid-area: skills }
+
+.experience { grid-area: experience }
 
 .sectionTitle {
     color: #DFB03D;
@@ -22,14 +22,6 @@
     margin-bottom: 2rem;
 }
 
-.sectionSubTitle {
-    margin-top: 2.5rem;
-}
+.sectionSubTitle { margin-top: 2.5rem }
 
-.sectionText {
-    color: #B0BCCC;
-}
-
-.experience {
-    grid-area: experience;
-}
+.sectionText { color: #B0BCCC }
