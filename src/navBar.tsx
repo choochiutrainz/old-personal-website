@@ -140,20 +140,6 @@ const NavBar = () => {
     }
   }
 
-  const getPageVideo = () => {
-    switch (window.location.pathname) {
-      case "/rogue-squadron":
-        return 
-
-      case "/diux":
-        return
-
-      default:
-        break
-    }
-
-  }
-
   return (
     <div className={`navBar headerContainer ${getHeaderBackground()}`}>
       <div className="header">

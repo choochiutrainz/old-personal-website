@@ -11,7 +11,7 @@ const DIUx = () => {
     return <div className="body">
         <div className="overviewContainer">
             <h1 className="overviewHeader">The Lore</h1>
-            <p className="overviewSubHeader">A wounded person's of survival increase nearly threefold if he/she receive a blood transfusion within an hour of being injured. Unfortunately, blood supplies are typically so far that that it's unlikely to deliver the blood or evacuate that person in time, especially in combat zones or disaster locations. Then we thought, "what if we used drones?"</p>
+            <p className="overviewSubHeader">A wounded person's chances of survival increase nearly threefold if they receive a blood transfusion within an hour of being injured. Unfortunately, blood supplies are typically so far that that it's unlikely to deliver the blood or evacuate that person in time, especially in combat zones or disaster locations. Then we thought, "what if we used drones to do that?"</p>
             <img className="projectImage" src={ZiplineTeam} alt="Zipline Team" />
             <p className="projectText">Drones cost less to procure {'&'} maintain, put fewer lives at risk, and much more quickly deploy {'&'} deliver supplies to wherever needed. We had to add them to the toolbox. I helped with the project as a junior Product Manager to ideate adapting commercial technology to national defense applications, guide private companies through the Department of Defense's (DoD) complex acquisitions process, and mediate between companies {'&'} frontline personnel to balance mission needs {'&'} business priorities.</p>
         </div>
