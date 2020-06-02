@@ -187,7 +187,7 @@
   margin: 0 .5rem;
 }
 
-.iconButton:hover { opacity: 70% }
+.iconButton:hover { filter: brightness(80%) }
 
 .navBarButton {
   font-size: 20px;
@@ -216,13 +216,11 @@
 .grayHighlight {
   background-color: rgb(190, 190, 190);
   color: #282C34;
-  opacity: 90%;
 }
 
 .tanHighlight {
   background-color: rgb(148, 133, 113);
   color: #282C34;
-  opacity: 90%;
 }
 
 .whiteText { color: #DDDDDD }
@@ -238,7 +236,7 @@
   margin-right: .5rem;
 }
 
-.playButton:hover { opacity: 70% }
+.playButton:hover { filter: brightness(80%) }
 
 .button {
   background-color: #6A71BD;

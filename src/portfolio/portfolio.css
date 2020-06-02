@@ -13,7 +13,7 @@
 }
 
 .portfolioImage:hover {
-    opacity: 70%;
+    filter: brightness(80%);
     cursor: pointer;
 }
 
