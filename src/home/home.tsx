@@ -7,6 +7,7 @@ import wesWithStarfox from '../assets/photos/wes-with-starfox-2.jpg'
 import wesWithCamera from '../assets/photos/wes-photographer.jpg'
 import wesWithZipline from '../assets/photos/zipline-team-1.png'
 import wesPortrait from '../assets/photos/wes-portrait.png'
+import rogueSquadron from '../assets/photos/rogue-squadron.png'
 
 
 const Home = () => {
@@ -43,7 +44,7 @@ const Home = () => {
             <p className="onLightBg">It's a wonderful opportunity to work with people who are so passionate about their craft and to enable them to achieve new heights. Take a look at my latest projects that I've been a part of.</p>
             <div className="centerContainer3">
                 <img className="portfolioImage" src={wesWithStarfox} alt="Section 31" onClick={navigateToS31}/>
-                <img className="portfolioImage" src={wesAtSANS} alt="Rogue Squadron" onClick={navigateToRS}/>
+                <img className="portfolioImage" src={rogueSquadron} alt="Rogue Squadron" onClick={navigateToRS}/>
                 <img className="portfolioImage" src={wesWithZipline} alt="DIU" onClick={navigateToDIUx}/>
             </div>
             <button className="button" onClick={navigateToPortfolio}>SEE MORE PROJECTS</button>

@@ -14,9 +14,7 @@
   background: #1C2736;
 }
 
-.underlinedText {
-  text-decoration: underline;
-}
+.underlinedText { text-decoration: underline }
 
 .headerContainer {
   display: grid;
@@ -86,13 +84,9 @@
   background-position: top;
 }
 
-.rogueSquadronBackground {
+.rogueSquadronBackground { background-image: url("./assets/videos/rogue-squadron-loop.gif") }
 
-}
-
-.DIUBackground {
-  
-}
+.DIUBackground { background-image: url("./assets/videos/zipline-loop.gif");}
 
 .streetcodeBackground { background-image: url("./assets/photos/streetcode-background.png") }
 

@@ -9,7 +9,6 @@ import DIULogo from './assets/logos/DIU-logo.png'
 import streetcodeLogo from './assets/logos/streetcode-logo.jpg'
 import swarmChallengeLogo from './assets/logos/swarm-challenge-logo.png'
 import playButton from './assets/play-button.png'
-import { url } from 'inspector'
 
 
 const NavBar = () => {
@@ -63,9 +62,9 @@ const NavBar = () => {
 
       case "/rogue-squadron":
         return <div>
-          <h1 className="onLightBg"><img className="iconImg" src={dowding} alt="Dowding logo" />Dowding</h1>
-          <h3 className="onLightBg">The US Military's largest detection network for drone incursions.</h3>
-          <h3 className="onLightBg"><img className="playButton" onClick={playRSVideo} src={playButton} alt="Play button"/>Watch Video</h3>
+          <h1 className="whiteText"><img className="iconImg" src={dowding} alt="Dowding logo" />Dowding</h1>
+          <h3 className="whiteText">The US Military's largest detection network for drone incursions.</h3>
+          <h3 className="whiteText"><img className="playButton" onClick={playRSVideo} src={playButton} alt="Play button"/>Watch Video</h3>
           </div>
 
       case "/section-31":
@@ -77,9 +76,9 @@ const NavBar = () => {
 
       case "/diux":
         return <div>
-          <h1 className="onLightBg"><img className="iconImg" src={DIULogo} alt="DIU Logo"/>Drone Medical Resupply</h1>
-          <h3 className="onLightBg">{'Using drones to deliver lifesaving blood & medical supplies to the front line.'}</h3>
-          <h3 className="onLightBg"><img className="playButton" onClick={playDIUVideo} src={playButton} alt="Play button"/>Watch Video</h3>
+          <h1 className="whiteText"><img className="iconImg" src={DIULogo} alt="DIU Logo"/>Drone Medical Resupply</h1>
+          <h3 className="whiteText">{'Using drones to deliver lifesaving blood & medical supplies to the front line.'}</h3>
+          <h3 className="whiteText"><img className="playButton" onClick={playDIUVideo} src={playButton} alt="Play button"/>Watch Video</h3>
         </div>
 
       case "/streetcode-academy":
@@ -128,6 +127,9 @@ const NavBar = () => {
 
       case "/rogue-squadron":
         return 'rogueSquadronBackground'
+
+      case "/diux":
+        return 'DIUBackground'
 
       case "/streetcode-academy":
         return 'streetcodeBackground'

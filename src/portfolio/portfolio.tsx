@@ -1,10 +1,10 @@
 import React from 'react'
 import { useHistory } from "react-router-dom"
 import wesWithStarfox from '../assets/photos/wes-with-starfox-2.jpg'
-import wesAtSANS from '../assets/photos/wes-at-sans.jpg'
 import wesWithZipline from '../assets/photos/zipline-team-1.png'
 import streetcodeTeam from '../assets/photos/streetcode-team-1.png'
 import wesHoldingUAS from '../assets/photos/wes-holding-uas.jpg'
+import rogueSquadron from '../assets/photos/rogue-squadron.png'
 import Footer from '../footer'
 import './portfolio.css'
 
@@ -23,7 +23,7 @@ const Portfolio = () => {
             <p className="medDarkBg">I’ve centered my career around solving compelling problems and producing real, tangible value to both the business and the end user with an inspiring team. There’s no problem that I can’t tackle. Here are some of the amazing projects that show how I made that happen.</p>
             <div className="portfolioImgFlex">
                 <img className="portfolioImage" src={wesWithStarfox} alt="Wes with Starfox" onClick={navigateToS31}/>
-                <img className="portfolioImage" src={wesAtSANS} alt="Wes at SANS" onClick={navigateToRS}/>
+                <img className="portfolioImage" src={rogueSquadron} alt="Wes at SANS" onClick={navigateToRS}/>
                 <img className="portfolioImage" src={wesWithZipline} alt="DIU" onClick={navigateToDIUx}/>
             </div>
         </div>

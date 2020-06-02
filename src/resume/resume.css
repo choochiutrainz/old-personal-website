@@ -2,15 +2,18 @@
     background-color: #1C2736;
     color: #DDDDDD;
     display: grid;
-    grid-template-columns: 1rem auto auto 1rem;
+    grid-template-columns: 5rem auto auto 5rem;
     grid-template-rows: auto auto;
     grid-template-areas:
-        ". skills experience ."
-        "callToAction callToAction callToAction callToAction";
-    grid-gap: 5rem 3rem;
+        ". smallImg statement ."
+        ". skills experience .";
+    grid-gap: 5rem 5rem;
     justify-items: start;
     text-align: left;
+    padding-bottom: 3rem;
 }
+
+.statement { grid-area: statement }
 
 .skills { grid-area: skills }
 
@@ -25,3 +28,10 @@
 .sectionSubTitle { margin-top: 2.5rem }
 
 .sectionText { color: #B0BCCC }
+
+.smallImg { 
+    grid-area: smallImg;
+    max-height: 15rem;
+}
+
+.yellowText { color: #DFB03D }

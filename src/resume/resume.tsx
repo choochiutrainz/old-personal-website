@@ -2,6 +2,7 @@ import React from 'react'
 import { useHistory } from "react-router-dom"
 import Footer from '../footer'
 import './resume.css'
+import wesInSpace from '../assets/photos/wes-in-space.jpg'
 
 const Resume = () => {
     const history = useHistory()
@@ -13,6 +14,7 @@ const Resume = () => {
     return <div className="body">
         <div className="resumeContainer">
             <div className= "skills">
+                <img className="smallImg" src={wesInSpace} alt="Wes in Space" />
                 <h1 className="sectionTitle">SKILLS</h1>
                 <h3 className="sectionSubTitle">Product Management</h3>
                 <p className="sectionText">Agile Product Management</p>
@@ -48,6 +50,10 @@ const Resume = () => {
                 <p className="sectionText">Metasploit</p>
             </div>
             <div className= "experience">
+                <div className="statement">
+                    <h1 className="yellowText">WESLEY "CHEWY" CHIU</h1>
+                    <h3 className="sectionText">I am an outcome-oriented Product Manager on a mission to find and tackle the next great opportunity with a talented, inspiring team. I enjoy bike-packing, playing table-tennis, rock climbing, and capturing priceless moments on camera.</h3>
+                </div>
                 <h1 className="sectionTitle">EXPERIENCE</h1>
                 <h3 className="sectionSubTitle">DEPUTY FLIGHT COMMANDER || 17th Intelligence Squadron || Langley AFB || Feb '20 - Present</h3>
                 <p className="sectionText">Looking to modernize tools and software used by the intelligence and cyber warfare
@@ -74,10 +80,13 @@ const Resume = () => {
     design. Enabled a community of non-traditional start ups and businesses to sign rapid
     prototyping contracts with military entities within 60 days on average after project initiation.</p>
 
-                <h3 className="sectionSubTitle">SOFTWARE ENGINEERING INTERN || Nat'I Reconnaissance Office || Chantilly || May '16 - Aug '16</h3>
+                <h3 className="sectionSubTitle">PENETRATION TESTER || DARPA Swarm Drone Challenge || Colorado Springs || Oct '16 - Mar '17</h3>
+                <p className="sectionText">Was part of the US Air Force Academy team to develop and code tactics, techniques, and behaviors for drones that act as a collective swarm. Also penetration tested the drones provided by DARPA and exploited vulnerabilities during a live-fly event to demonstrate the importance of cyber security in emerging technologies and showcase how one can use cyberwarfare to gain an tactical advantage over a more technologically advanced foe.</p>
+                
+                <h3 className="sectionSubTitle">SOFTWARE ENGINEERING INTERN || National Reconnaissance Office (NRO) || Chantilly || May '16 - Aug '16</h3>
                 <p className="sectionText">{'Was part of the External Cloud Office at the NRO Headquarters to introduce & integrate an AWS hosted service called the Commercial Cloud Service (C2S) to the NRO. Assisted U.S. partner intelligence agencies & international allies on transitioning to the C2S environment. Developed & deployed basic scripts to minimize time spent on migrating data, provisioning accounts, & transitioning operations to C2S.'}</p>
 
-                <h3 className="sectionSubTitle">SOFTWARE REVERSE ENGINEERING INTERN || Nat'l Reconnaissance Office || Denver || May '15 - Aug '15 </h3>
+                <h3 className="sectionSubTitle">SOFTWARE REVERSE ENGINEERING INTERN || National Reconnaissance Office || Denver || May '15 - Aug '15 </h3>
                 <p className="sectionText">{'Developed & deployed apps for data aggregation and signals intelligence development that replaced manual excel process with a 80% decrease in processing time. Reverse engineered various communication technologies to enable signals collection and analysis.'}</p>
 
                 <h1 className="sectionTitle">{'EDUCATION & CERTIFICATIONS'}</h1>
