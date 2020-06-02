@@ -38,7 +38,7 @@ const Streetcode = () => {
             <p>Streetcode offers many classes that teach not only modern coding skills but also non-programming related topics, such as entrepreneurship, computer literacy, and more. Above all, Streetcode strives to instill an undying curiosity towards technology in all of its students.</p>
         </div>
         <div className="callToActionFlex">
-            <h2 className="onLightBg">Check out my next project: <a className="darkTextLink" href="/darpa">DARPA Swarm Drone Challenge</a></h2>
+            <h2 className="onLightBg">Check out my next project: <a className="darkTextLink" href="https://choochiutrain.com/darpa">DARPA Swarm Drone Challenge</a></h2>
         </div>
         <Footer/>
     </div>

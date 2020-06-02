@@ -33,7 +33,7 @@ const RogueSquadron = () => {
             <p>RS was originally part of the Defense Innovation Unit Experimental (DIUx), now the <a className="darkTextLink" href="https://www.diu.mil">Defense Innovation Unit</a>. In March 2020, RS went through a <a className="darkTextLink" href="https://dds.mil/dds-acquires-rogue-squadron/">successful acquisition</a> by the Defense Digital Service (DDS).</p>
         </div>
         <div className="callToActionFlex">
-            <h2 className="onLightBg">Check out my next project: <a className="darkTextLink" href="/diux">UAS Medical Resupply</a></h2>
+            <h2 className="onLightBg">Check out my next project: <a className="darkTextLink" href="https://choochiutrain.com/diux">UAS Medical Resupply</a></h2>
         </div>
         <Footer/>
     </div>
