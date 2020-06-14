@@ -38,7 +38,7 @@ const DIUx = () => {
 
         </div>
         <div className="callToActionFlex">
-            <h2 className="onLightBg">Check out my next project: <a className="darkTextLink" href="https://choochiutrain.com/streetcode-academy">Streetcode Academy</a></h2>
+            <h2 className="onLightBg">Check out my next project: <a className="darkTextLink" href="/streetcode-academy">Streetcode Academy</a></h2>
         </div>
         <Footer/>
     </div>

@@ -126,12 +126,51 @@
   padding-right: 10rem;
 }
 
-.introFlex {
+.introContainer {
   background-color: #1C2736;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr 1.5fr;
+  grid-template-rows: 2rem auto auto auto auto 3rem;
+  grid-template-areas: 
+    ". . . . ."
+    ". introHeader introHeader introHeader ."
+    ". introText introText introText ."
+    ". introImg introImg1 introImg2 ."
+    ". introNotes introNotes introNotes ."
+    ". . . . .";
+}
+
+.introHeader {
+  color: #DFB03D;
+  grid-area: introHeader;
+}
+
+.introText {
+  color: #DDDDDD;
+  grid-area: introText;
+}
+
+.introImg {
+  max-height: 35rem;
+  padding: 1rem 2rem;
+  grid-area: introImg;
+}
+
+.introImg1 {
+  max-height: 35rem;
+  padding: 1rem 2rem;
+  grid-area: introImg1;
+}
+
+.introImg2 {
+  max-height: 35rem;
+  padding: 1rem 2rem;
+  grid-area: introImg2;
+}
+
+.introNotes {
+  color: #DDDDDD;
+  grid-area: introNotes;
 }
 
 .whiteFlex {
@@ -142,12 +181,50 @@
   justify-content: space-around;
 }
 
-.grayFlex {
+
+.grayContainer {
   background-color: #DDDDDD;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
+  display: grid;
+  padding-top: 1.5rem;
+  row-gap: 0.5rem;
+  grid-template-rows: 1.5fr auto auto auto auto 1.5fr;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr 1.5fr;
+  grid-template-areas: 
+    ". . . . ."
+    ". grayTitle grayTitle grayTitle ."
+    ". grayImg . grayImg1 ."
+    ". imgNotes . imgNotes1 ."
+    ". . grayButton . ."
+}
+
+.grayTitle {
+  color: #282C34;
+  grid-area: grayTitle;
+}
+
+.grayImg {
+  grid-area: grayImg;
+  max-height: 35rem;
+  border-radius: 5px;
+}
+
+.grayImg1 {
+  grid-area: grayImg1;
+  max-height: 35rem;
+  border-radius: 5px;
+}
+
+.imgNotes {
+  grid-area: imgNotes;
+}
+
+.imgNotes1 {
+  grid-area: imgNotes1;
+}
+
+.grayButton {
+  grid-area: grayButton;
+  justify-self: center;
 }
 
 .callToActionFlex {

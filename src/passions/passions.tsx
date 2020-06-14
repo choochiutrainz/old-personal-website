@@ -21,10 +21,10 @@ const Passions = () => {
     const navigateToResume = () => history.push("/resume")
 
     return <div className="body">
-        <div className="introFlex">
-            <h1 className="lgDarkBg">A few fun facts about myself</h1>
-            <img className="lgImg" src={wesWithParents} alt="Wes with parents" />
-            <p className="centerText medDarkBg">I’m a U.S. Air Force Cyberwarfare Officer at Langley AFB near Hampton, VA. I love bikepacking, rockclimbing, and capturing special moments on camera. I have two cats named <a className="hiddenTextLink" href="/cats">Byakko and Tofu,</a> I like a good IPA, my favorite food is Taiwanese beef noodle soup, and I had to get stitches on my head...once, thankfully.</p>
+        <div className="introContainer">
+            <h1 className="introHeader">A few fun facts about myself</h1>
+            <img className="introImg1" src={wesWithParents} alt="Wes with parents" />
+            <p className="introNotes">I’m a U.S. Air Force Cyberwarfare Officer at Langley AFB near Hampton, VA. I love bikepacking, rockclimbing, and capturing special moments on camera. I have two cats named <a className="hiddenTextLink" href="/cats">Byakko and Tofu,</a> I like a good IPA, my favorite food is Taiwanese beef noodle soup, and I had to get stitches on my head...once, thankfully.</p>
         </div>
         <h1 className="passionsHeader">Here are some special memories that I had so much fun capturing</h1>
         <div className="photosContainer">

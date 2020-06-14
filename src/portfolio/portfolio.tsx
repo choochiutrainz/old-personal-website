@@ -18,14 +18,12 @@ const Portfolio = () => {
     const navigateToStreetcode = () => history.push("/streetcode-academy")
 
     return <div className="body">
-        <div className="introFlex">
-            <h1 className="lgDarkBg">I'm always looking to solve the next big challenge</h1>
-            <p className="medDarkBg">I’ve centered my career around solving compelling problems and producing real, tangible value to both the business and the end user with an inspiring team. There’s no problem that I can’t tackle. Here are some of the amazing projects that show how I made that happen.</p>
-            <div className="portfolioImgFlex">
-                <img className="portfolioImage" src={wesWithStarfox} alt="Wes with Starfox" onClick={navigateToS31}/>
-                <img className="portfolioImage" src={rogueSquadron} alt="Wes at SANS" onClick={navigateToRS}/>
-                <img className="portfolioImage" src={wesWithZipline} alt="DIU" onClick={navigateToDIUx}/>
-            </div>
+        <div className="introContainer">
+            <h1 className="introHeader">I'm always looking to solve the next big challenge</h1>
+            <p className="introText">I’ve centered my career around solving compelling problems and producing real, tangible value to both the business and the end user with an inspiring team. There’s no problem that I can’t tackle. Here are some of the amazing projects that show how I made that happen.</p>
+            <img className="introImg" src={wesWithStarfox} alt="Wes with Starfox" onClick={navigateToS31}/>
+            <img className="introImg1" src={rogueSquadron} alt="Wes at SANS" onClick={navigateToRS}/>
+            <img className="introImg2" src={wesWithZipline} alt="DIU" onClick={navigateToDIUx}/>
         </div>
         <div className="grayFlex">
             <h1>Check out some of the other projects that I've been a part of.</h1>

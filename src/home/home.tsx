@@ -25,19 +25,13 @@ const Home = () => {
             <h1 className="homeIntroHeader">{'My passion & focus is agile software development.'}</h1>
             <p className="homeIntroText">{'I strive to build & lead effective, diverse, and collaborative product teams to design & deliver a product with our users that we couldn’t have imagined alone. If you want to learn more about working together, feel free to'} <a className="lightTextLink" href="/contact">contact me.</a></p>
         </div>
-        <div className="grayFlex">
-            <h1 className="onLightBg">I also do portrait photography. And I like to hack things.</h1>
-            <div className="centerContainer2">
-                <div className="leftContainer2">
-                    <img className="medImg" src={wesAtSANS} alt="Wes at SANS" />
-                    <p className="onLightBg">I am a US Air Force Cyberwarfare Officer by trade. I get a good kick out of pen-testing my home devices and participating in Capture-the-Flag (CTF) events to test my skills.</p>
-                </div>
-                <div className="rightContainer2">
-                    <img className="medImg" src={wesWithCamera} alt="Wes with his Sony a7iii" />
-                    <p className="onLightkBg">I love capturing priceless moments on my camera and sharing the stories of amazing people that I meet around the world. I’d be honored to photograph your special occasion.</p>
-                </div>
-            </div>
-            <button className="button" onClick={navigateToPassions}>SEE MY PASSIONS</button>
+        <div className="grayContainer">
+            <h1 className="grayTitle">I also do portrait photography. And I like to hack things.</h1>
+            <img className="grayImg" src={wesAtSANS} alt="Wes at SANS" />
+            <p className="imgNotes">I am a US Air Force Cyberwarfare Officer by trade. I get a good kick out of pen-testing my home devices and participating in Capture-the-Flag events to test my skills.</p>
+            <img className="grayImg1" src={wesWithCamera} alt="Wes with his Sony a7iii" />
+            <p className="imgNotes1">I love capturing priceless moments on my camera and sharing the stories of amazing people that I meet around the world. I’d be honored to photograph your special occasion.</p>
+            <button className="button grayButton" onClick={navigateToPassions}>SEE MY PASSIONS</button>
         </div>
         <div className="whiteFlex">
             <h1 className="onLightBg">My projects</h1>

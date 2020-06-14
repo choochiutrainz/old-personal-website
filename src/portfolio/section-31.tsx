@@ -39,7 +39,7 @@ const Section31 = () => {
             <p>Section 31 is a Star Trek reference to an unacknowledged Starfleet Intelligence organization that makes allowances for "bending the rules" during times of extraordinary threats. They operate on the basis that extraordinary threates warrant extraordinary measures to accomplish the mission.</p>
         </div>
         <div className="callToActionFlex">
-            <h2 className="onLightBg">Check out my next project: <a className="darkTextLink" href="https://choochiutrain.com/rogue-squadron">Dowding</a></h2>
+            <h2 className="onLightBg">Check out my next project: <a className="darkTextLink" href="/rogue-squadron">Dowding</a></h2>
         </div>
         <Footer/>
     </div>
