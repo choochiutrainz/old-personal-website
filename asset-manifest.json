@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.0c3d4b96.chunk.css",
-    "main.js": "/static/js/main.5f5440a5.chunk.js",
-    "main.js.map": "/static/js/main.5f5440a5.chunk.js.map",
+    "main.css": "/static/css/main.7b130c24.chunk.css",
+    "main.js": "/static/js/main.9ea51a36.chunk.js",
+    "main.js.map": "/static/js/main.9ea51a36.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e9e1c586.js",
     "runtime-main.js.map": "/static/js/runtime-main.e9e1c586.js.map",
     "static/js/2.a3d660f3.chunk.js": "/static/js/2.a3d660f3.chunk.js",
     "static/js/2.a3d660f3.chunk.js.map": "/static/js/2.a3d660f3.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.6b15d53fd2205104c55c4a0e4bfc91a6.js": "/precache-manifest.6b15d53fd2205104c55c4a0e4bfc91a6.js",
+    "precache-manifest.3c255b7988d957915016ae7a70e448a5.js": "/precache-manifest.3c255b7988d957915016ae7a70e448a5.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.0c3d4b96.chunk.css.map": "/static/css/main.0c3d4b96.chunk.css.map",
+    "static/css/main.7b130c24.chunk.css.map": "/static/css/main.7b130c24.chunk.css.map",
     "static/js/2.a3d660f3.chunk.js.LICENSE.txt": "/static/js/2.a3d660f3.chunk.js.LICENSE.txt",
     "static/media/DIU-logo.png": "/static/media/DIU-logo.74696702.png",
     "static/media/S31-logo.png": "/static/media/S31-logo.1141a362.png",
@@ -65,7 +65,7 @@
   "entrypoints": [
     "static/js/runtime-main.e9e1c586.js",
     "static/js/2.a3d660f3.chunk.js",
-    "static/css/main.0c3d4b96.chunk.css",
-    "static/js/main.5f5440a5.chunk.js"
+    "static/css/main.7b130c24.chunk.css",
+    "static/js/main.9ea51a36.chunk.js"
   ]
 }
