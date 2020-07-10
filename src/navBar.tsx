@@ -26,12 +26,10 @@ const NavBar = () => {
   const playDIUVideo = () => window.open("https://www.youtube.com/watch?v=FeSCEalMOL8")
   const playStreetcodeVideo = () => window.open("https://vimeo.com/249009796")
   const playDARPAVideo = () => window.open("https://www.youtube.com/watch?v=ufidH_M0RqQ")
-  const scrollToTop = () => window.scrollTo(0,0)
 
   const getPageHeader = () => {
     switch (window.location.pathname) {
       case "/":
-        scrollToTop()
         return <div>
           <h1>Leading teams to build working software that people love.</h1>
           <h3>Welcome to choochiutrain.com, the Internet home for Wesley Chiu.</h3>
@@ -39,37 +37,31 @@ const NavBar = () => {
         </div>
 
       case "/portfolio":
-        scrollToTop()
+        window.scrollTo(0,0)
         return <div className="onLightBg"><h1>See what you can expect from me.</h1></div>
 
       case "/passions":
-        scrollToTop()
         return <div className="onLightBg"><h1>{'Check out my Passions & Hobbies.'}</h1></div>
       
       case "/resume":
-        scrollToTop()
         return <div>
           <h1>Learn more about My Story.</h1>
           <button className="button" onClick={downloadResume}>DOWNLOAD RESUME</button>
           </div>
 
       case "/contact":
-        scrollToTop()
         return <div><h1>Let's connect today!</h1></div>
 
       case "/error":
-        scrollToTop()
         return <div>
           <h1 className="onLightBg">Oops! I can't seem to find the page you're looking for.</h1>
           <h3 className="onLightBg">May I make it up to you and take you back to the <a className="darkTextLink" href="/">home page?</a></h3>
           </div>
 
       case "/cats":
-        scrollToTop()
         return <div><h1 className="lgDarkBg">Oh hi!</h1></div>
 
       case "/rogue-squadron":
-        scrollToTop()
         return <div>
           <h1 className="whiteText"><img className="iconImg" src={dowding} alt="Dowding logo" />Dowding</h1>
           <h3 className="whiteText">The US Military's largest detection network for drone incursions.</h3>
@@ -77,7 +69,6 @@ const NavBar = () => {
           </div>
 
       case "/section-31":
-        scrollToTop()
         return <div>
           <h1 className="whiteText"><img className="iconImg" src={starfoxLogo} alt="Starfox Logo"/>SureFire</h1>
           <h3 className="whiteText">Modernizing the US Space Force's RF Deconfliction capabilities to promote a safe space environment.</h3>
@@ -85,7 +76,6 @@ const NavBar = () => {
         </div>
 
       case "/diux":
-        scrollToTop()
         return <div>
           <h1 className="whiteText"><img className="iconImg" src={DIULogo} alt="DIU Logo"/>Drone Medical Resupply</h1>
           <h3 className="whiteText">{'Using drones to deliver lifesaving blood & medical supplies to the front line.'}</h3>
@@ -93,7 +83,6 @@ const NavBar = () => {
         </div>
 
       case "/streetcode-academy":
-        scrollToTop()
         return <div>
           <img className="iconImg" src={streetcodeLogo} alt="Streetcode Academy Logo" />
           <h3><mark className="grayHighlight">Empowering underprivileged communities to fulfill their full potential in the tech industry.</mark></h3>
@@ -101,7 +90,6 @@ const NavBar = () => {
         </div>      
 
       case "/darpa":
-        scrollToTop()
         return <div>
           <h1 className="onLightBg"><img className="iconImg" src={swarmChallengeLogo} alt="DARPA UAS Swarm Logo"/>DARPA Swarm UAS Challenge</h1>
           <h3 className="onLightBg"><mark className="tanHighlight">{'Trailblazing swarm drone tactics & technologies to dominate the future battlefield.'}</mark></h3>
@@ -155,6 +143,7 @@ const NavBar = () => {
     }
   }
 
+  window.scrollTo(0,0)
   return (
     <div className={`navBar headerContainer ${getHeaderBackground()}`}>
       <div className="header">
