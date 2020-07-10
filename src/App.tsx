@@ -33,7 +33,7 @@ const App = () => {
           <Route path='/streetcode-academy' component={Streetcode} />
           <Route path='/error' component={Error} />
           <Route path='/cats' component={Cats} />
-          <Route path='*' render={() => <Redirect to={{pathname: "/error"}} />} />
+          <Route path='*' render={() => <Redirect to='/error' />} />
         </Switch>
       </Router>      
   )
