@@ -168,6 +168,21 @@
   grid-area: introImg2;
 }
 
+.introImg:hover {
+  filter: brightness(80%);
+  cursor: pointer;
+}
+
+.introImg1:hover {
+  filter: brightness(80%);
+  cursor: pointer;
+}
+
+.introImg2:hover {
+  filter: brightness(80%);
+  cursor: pointer;
+}
+
 .introNotes {
   color: #DDDDDD;
   grid-area: introNotes;
