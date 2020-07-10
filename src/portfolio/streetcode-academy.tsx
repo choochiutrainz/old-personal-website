@@ -1,4 +1,5 @@
 import React from 'react'
+import { useHistory } from "react-router-dom"
 import Footer from '../footer'
 import streetcodeTeam from '../assets/photos/streetcode-team.png'
 import streetcodeLiveLogo from '../assets/logos/streetcode-live-logo.png'
@@ -7,6 +8,9 @@ import streetCode1 from '../assets/photos/streetcode-1.png'
 import streetCode2 from '../assets/photos/streetcode-2.png'
 
 const Streetcode = () => {
+    const history = useHistory()
+    const navigateToDARPA = () => history.push("/darpa")
+
     return <div className="body">
         <div className="overviewContainer">
             <h1 className="overviewHeader">How I got involved</h1>
@@ -38,7 +42,7 @@ const Streetcode = () => {
             <p>Streetcode offers many classes that teach not only modern coding skills but also non-programming related topics, such as entrepreneurship, computer literacy, and more. Above all, Streetcode strives to instill an undying curiosity towards technology in all of its students.</p>
         </div>
         <div className="callToActionFlex">
-            <h2 className="onLightBg">Check out my next project: <a className="darkTextLink" href="darpa">DARPA Swarm Drone Challenge</a></h2>
+            <h2 className="onLightBg">Check out my next project: <button className="transparentButton" onClick={navigateToDARPA}>DARPA Swarm Drone Challenge</button></h2>
         </div>
         <Footer/>
     </div>

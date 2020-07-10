@@ -70,7 +70,6 @@
     justify-self: center;
 }
 
-
 .detailsImg {
   grid-area: detailsImg;
   justify-self: center;
@@ -91,7 +90,6 @@
   max-height: 25rem;
   padding: 1rem;
 }
-
 
 .endNotes { grid-area: endNotes }
 

@@ -1,4 +1,5 @@
 import React from 'react'
+import { useHistory } from "react-router-dom"
 import Footer from '../footer'
 import ZiplineTeam from '../assets/photos/zipline-team.jpg'
 import ZiplineLoading from '../assets/photos/zipline-loading.jpg'
@@ -8,6 +9,9 @@ import DIULogo from '../assets/logos/DIU-logo.png'
 
 
 const DIUx = () => {
+    const history = useHistory()
+    const navigateToStreetCode = () => history.push("/streetcode-academy")
+
     return <div className="body">
         <div className="overviewContainer">
             <h1 className="overviewHeader">The Lore</h1>
@@ -38,7 +42,7 @@ const DIUx = () => {
 
         </div>
         <div className="callToActionFlex">
-            <h2 className="onLightBg">Check out my next project: <a className="darkTextLink" href="streetcode-academy">Streetcode Academy</a></h2>
+            <h2 className="onLightBg">Check out my next project: <button className="transparentButton" onClick={navigateToStreetCode}>Streetcode Academy</button></h2>
         </div>
         <Footer/>
     </div>

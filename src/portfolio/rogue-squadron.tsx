@@ -1,9 +1,13 @@
 import React from 'react'
+import { useHistory } from "react-router-dom"
 import Footer from '../footer'
 import Dowding from '../assets/photos/dowding-web.png'
 import RSLogo from '../assets/logos/rogue-squadron-logo.png'
 
 const RogueSquadron = () => {
+    const history = useHistory()
+    const navigateToDIUx = () => history.push("/diux")
+
     return <div className="body">
         <div className="overviewContainer">
             <h1 className="overviewHeader">The Dowding Story</h1>
@@ -33,7 +37,7 @@ const RogueSquadron = () => {
             <p>RS was originally part of the Defense Innovation Unit Experimental (DIUx), now the <a className="darkTextLink" href="https://www.diu.mil">Defense Innovation Unit</a>. In March 2020, RS went through a <a className="darkTextLink" href="https://dds.mil/dds-acquires-rogue-squadron/">successful acquisition</a> by the Defense Digital Service (DDS).</p>
         </div>
         <div className="callToActionFlex">
-            <h2 className="onLightBg">Check out my next project: <a className="darkTextLink" href="diux">UAS Medical Resupply</a></h2>
+            <h2 className="onLightBg">Check out my next project: <button className="transparentButton" onClick={navigateToDIUx}>UAS Medical Resupply</button></h2>
         </div>
         <Footer/>
     </div>

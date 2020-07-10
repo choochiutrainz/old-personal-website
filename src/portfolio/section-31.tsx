@@ -1,4 +1,5 @@
 import React from 'react'
+import { useHistory } from "react-router-dom"
 import Footer from '../footer'
 import SureFireHome from '../assets/photos/starfox-homepage.png'
 import StarfoxLogo from '../assets/logos/starfox-watermark.png'
@@ -8,6 +9,9 @@ import starfoxTeam from '../assets/photos/wes-with-starfox-4.jpg'
 import starfoxTeam1 from '../assets/photos/wes-with-starfox-3.jpg'
 
 const Section31 = () => {
+    const history = useHistory()
+    const navigateToRS = () => history.push("/rogue-squadron")
+
     return <div className="body">
         <div className="overviewContainer">
             <h1 className="overviewHeader">A SureFire Success</h1>
@@ -39,7 +43,7 @@ const Section31 = () => {
             <p>Section 31 is a Star Trek reference to an unacknowledged Starfleet Intelligence organization that makes allowances for "bending the rules" during times of extraordinary threats. They operate on the basis that extraordinary threates warrant extraordinary measures to accomplish the mission.</p>
         </div>
         <div className="callToActionFlex">
-            <h2 className="onLightBg">Check out my next project: <a className="darkTextLink" href="rogue-squadron">Dowding</a></h2>
+            <h2 className="onLightBg">Check out my next project: <button className="transparentButton" onClick={navigateToRS}>Dowding</button></h2>
         </div>
         <Footer/>
     </div>
