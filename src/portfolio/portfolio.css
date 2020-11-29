@@ -10,6 +10,8 @@
 .portfolioImage {
     max-height: 35rem;
     padding: 1rem 2rem;
+    transition: .5s ease;
+    backface-visibility: hidden;
 }
 
 .portfolioImage:hover {

@@ -15,6 +15,7 @@ import DIUx from './portfolio/diux'
 import RogueSquadron from './portfolio/rogue-squadron'
 import Streetcode from './portfolio/streetcode-academy'
 import Cats from './easter-eggs/cats'
+import Blog from './blog/blog'
 
 const App = () => {
   return (
@@ -33,6 +34,7 @@ const App = () => {
           <Route path='/streetcode-academy' component={Streetcode} />
           <Route path='/error' component={Error} />
           <Route path='/cats' component={Cats} />
+          <Route path='/blog' component={Blog} />
           <Route path='*' render={() => <Redirect to='/error' />} />
         </Switch>
       </Router>      

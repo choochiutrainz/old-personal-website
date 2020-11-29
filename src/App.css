@@ -151,18 +151,21 @@
 }
 
 .introImg {
+  transition: .5s ease;
   max-height: 35rem;
   padding: 1rem 2rem;
   grid-area: introImg;
 }
 
 .introImg1 {
+  transition: .5s ease;
   max-height: 35rem;
   padding: 1rem 2rem;
   grid-area: introImg1;
 }
 
 .introImg2 {
+  transition: .5s ease;
   max-height: 35rem;
   padding: 1rem 2rem;
   grid-area: introImg2;

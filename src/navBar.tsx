@@ -58,6 +58,12 @@ const NavBar = () => {
           <h3 className="onLightBg">May I make it up to you and take you back to the <a className="darkTextLink" href="/">home page?</a></h3>
           </div>
 
+      case "/blog":
+        return <div>
+          <h1 className="onLightBg">Welcome to my blog</h1>
+          <h3 className="onLightBg">Hear me rant!</h3>
+          </div>
+
       case "/cats":
         return <div><h1 className="lgDarkBg">Oh hi!</h1></div>
 
@@ -120,7 +126,10 @@ const NavBar = () => {
       case "/error":
         return 'errorBackground'
 
-      case "/cats":
+      case "/blog":
+        return 'blogBackground'
+
+        case "/cats":
         return 'catsBackground'
 
       case "/section-31":
