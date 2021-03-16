@@ -1,5 +1,5 @@
 ## choochiutrainz.github.io
-Welcome! This repo was the first iteration of my [personal website](https://choochiutrain.com) before I started over from scratch with Next.js
+Welcome! This repo was the first iteration of my [personal website](https://choochiutrain.com) before I started over from scratch with NextJS. I keep this repo mainly just to see look back at where I first started.
 
 This project is written in ReactJS and was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). Special thanks to them for helping me get this started. Enjoy!
 
